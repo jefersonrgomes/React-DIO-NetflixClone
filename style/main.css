@@ -1,0 +1,49 @@
+:root{
+    --vermelho: #E50914;
+    --preto:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background:var(--preto);
+    font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Brlack', Arial, Helvetica, sans-serif, Times;
+    font-size: 50px;
+    margin-left: 10px;
+    font-style: bold;
+}
+
+header nav a{
+    color: #AAA;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+
+}
+
+header nav a:hover{
+    color: #FFF;
+    font-size: 30px;
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
