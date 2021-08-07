@@ -1,6 +1,7 @@
 :root{
     --vermelho: #E50914;
     --preto:#141414;
+    --cinza:#AAA;
 }
 
 *{
@@ -13,7 +14,7 @@ body
 {
     background:var(--preto);
     font-family: 'Times New Roman', 'Times New Roman', Times, serif;
-
+    color: white;
 }
 
 header .logo{
@@ -25,20 +26,20 @@ header .logo{
 }
 
 header nav a{
-    color: #AAA;
+    color: var(--cinza);
     text-decoration: none;
     margin-right: 10px;
     font-size: 20px;
+    transition-property: font-size;
+    transition-delay: 0.1s;
     transition: ease-in-out;
-    transition-duration: 0.5s;
+    transition-duration: 0.4s;
 
 }
 
 header nav a:hover{
     color: #FFF;
-    font-size: 30px;
-    transition: ease-in-out;
-    transition-duration: 0.5s;
+    font-size: 35px;    
 }
 
 header .container{
@@ -47,3 +48,69 @@ header .container{
     align-items: center;
     justify-content: space-between;
 }
+
+.container .titulo{
+    color: var(--cinza);
+}
+
+/*Filme Principal*/
+.filme-principal{
+ font-size: 16px;   
+ background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(../img/moviecards/houseofcards2.jpg);
+ background-size: cover;
+ background-position-y: center;
+ height: 400px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: flex-start; 
+ padding: 10px;
+}
+
+.botoes{
+    color: yellow;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 90px;
+}
+
+.titulo{
+
+    margin-top: 10%;
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+background-color: var(--vermelho);
+border: none;
+padding: 15px;
+color: white;
+text-transform: uppercase;
+border-radius: 4px;
+margin-right: 15px;
+font-size: 15px;
+cursor: pointer;
+
+    transition-delay: 0.1s;
+    transition: ease-in-out;
+    transition-duration: 0.4s;
+}
+
+.botao:hover{
+    background-color: white;
+    border: none;
+    padding: 20px;
+    color: black;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-right: 15px;
+    font-size: 15px;
+    cursor: pointer;
+    }
+
+    .botao i{
+        margin-right: 5px;
+    }
