@@ -114,3 +114,24 @@ cursor: pointer;
     .botao i{
         margin-right: 5px;
     }
+
+    /* 
+    Wrapper = Envelopar
+    */
+
+    .filme-principal .container
+    {
+        max-width: 70%;
+    }
+
+    .box-filme{
+        width: 100%;
+        height: 100%;
+        background-color: #E50914;
+        display: block;
+        cursor: pointer;
+    }
+
+/*
+https://owlcarousel2.github.io/OwlCarousel2/demos/basic.html
+*/

@@ -6,7 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
-    <title>Netflixfake</title>
+
+    <!-- Owl Css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+
+    <title>Fakeflix</title>
 </head>
 <!-- Ctlr+Shift+I = indentar 
 @Felipe Silva Aguiar 
@@ -16,12 +22,15 @@ Hoje, Recriando a Interface da Netflix, com algumas alterações para personaliz
 Agradeço ao @Felipe Silva Aguiar pela incrivel didatica que facilitou demais a compreensão 
 e avanço no conteudo apresentado neste projeto.
 
+
+Utilizado Recurso - OWN Carroucel
+https://owlcarousel2.github.io/OwlCarousel2/demos/basic.html
 -->
 
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">NETFLIX</h2>
+            <h2 class="logo">XILFTEN</h2>
             <nav>
                 <a href="#">Inicio</a>
                 <a href="#">Séries</a>
@@ -43,7 +52,7 @@ e avanço no conteudo apresentado neste projeto.
                     <i class="fas fa-play"></i>
                     ASSISTIR AGORA
                 </button>
-                
+
                 <button role="button" class="botao">
                     <i class="fas fa-info-circle"></i>
                     MAIS INFORMAÇÕES
@@ -52,9 +61,21 @@ e avanço no conteudo apresentado neste projeto.
         </div>
 
 
-
     </main>
 
+    <div class="carrousel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="img/moviecards/houseofcards.jpg">
+            </div>
+        </div>
+    </div>
 </body>
+
 <script src="https://kit.fontawesome.com/7fe091b30b.js" crossorigin="anonymous"></script>
+<script src="js/owl/jquery.min.map"></script>
+<script src="js/owl/jquery.min.js"></script>
+<script src="js/owl/owl.carousel.min.js"></script>
+<script src="js/owl/setup.js"></script>
+
 </html>
