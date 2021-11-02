@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import tmdb from './tmdb';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import MovieBanner from './components/MovieBanner';
 import MoviesRowList from './components/MoviesRowList';
 import Global from './Global.css'
+import FeaturedMovie from './components/FeaturedMovie';
 
 function Home() {
   const [movieList, setMovieList] = useState([]);
@@ -20,7 +20,7 @@ function Home() {
   return (
     <div>
       <Header />
-      <MovieBanner />
+      <FeaturedMovie />
       <section className='lists'>
         {movieList.map((item, key) => (
           <MoviesRowList key={key} title={item.title} items={item.items} />
