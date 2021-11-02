@@ -16,6 +16,11 @@ export const Container = styled.div`
             width: inherit;
             height: inherit;
             background: linear-gradient(to right, #111 35%, transparent 75%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 30px;
+            padding-bottom: 50px;
         }
 
         .featured--name{
