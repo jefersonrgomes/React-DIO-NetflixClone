@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './Global.css';
-import Home from './Home';
+import '../src/components/utils/Global.css';
+import Footer from './components/Footer';
+import Home from './components/Home/Home';
 
 ReactDOM.render(
   <React.StrictMode>

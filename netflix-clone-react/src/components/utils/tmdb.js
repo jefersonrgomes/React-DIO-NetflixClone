@@ -9,6 +9,7 @@ const basicFetch = async (endpoint) => {
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
+
     getHomeList: async () => {
         return [
             {
@@ -32,35 +33,56 @@ export default {
             {
                 slug: 'ACTION',
                 title: 'Ação',
-                items: await basicFetch(`/discover/movie?with_genres=28?language=pt-BR&api_key=${API_KEY}`)
+                items: await basicFetch(`/discover/movie?with_genres=28&language=pt-BR&api_key=${API_KEY}`)
             },
 
             {
                 slug: 'COMEDY',
                 title: 'Comedia',
-                items: await basicFetch(`/discover/movie?with_genres=35?language=pt-BR&api_key=${API_KEY}`)
+                items: await basicFetch(`/discover/movie?with_genres=35&language=pt-BR&api_key=${API_KEY}`)
             },
 
             {
                 slug: 'HORROR',
                 title: 'Terror',
-                items: await basicFetch(`/discover/movie?with_genres=27?language=pt-BR&api_key=${API_KEY}`)
+                items: await basicFetch(`/discover/movie?with_genres=27&language=pt-BR&api_key=${API_KEY}`)
             },
 
 
             {
                 slug: 'ROMANCE',
                 title: 'Romance',
-                items: await basicFetch(`/discover/movie?with_genres=10749?language=pt-BR&api_key=${API_KEY}`)
+                items: await basicFetch(`/discover/movie?with_genres=10749&language=pt-BR&api_key=${API_KEY}`)
             },
- 
+
             {
                 slug: 'DOCUMENTARY',
                 title: 'Documentarios',
-                items: await basicFetch(`/discover/movie?with_genres=99?language=pt-BR&api_key=${API_KEY}`)
+                items: await basicFetch(`/discover/movie?with_genres=99&language=pt-BR&api_key=${API_KEY}`)
             }
         ];
+    },
+
+
+    // Utilize '/tv' para Series & '/movie' para Filmes
+    getMovieInfo: async (movieId, type) => {
+        let info = {};
+
+        if (movieId) {
+            // eslint-disable-next-line default-case
+            switch (type) {
+                case 'movie':
+                    info = await basicFetch(`/movie/${movieId}?language=pt-BR&api_key=${API_KEY}`);
+                    break;
+                    case 'tv':
+                    // eslint-disable-next-line no-unused-vars
+                    info = await basicFetch(`/tv/${movieId}?language=pt-BR&api_key=${API_KEY}`);
+                    break;
+            }
+            return info;
+        }
     }
+
 }
 
 /*

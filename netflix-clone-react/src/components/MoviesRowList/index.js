@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react'
-import tmdb from '../../tmdb';
+import tmdb from '../utils/tmdb';
 import * as S from './styles'
 export function MoviesRowList({ title, items }) {
 
