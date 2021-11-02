@@ -7,6 +7,7 @@ const basicFetch = async (endpoint) => {
     return json;
 }
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
     getHomeList: async () => {
         return [
@@ -57,7 +58,7 @@ export default {
                 slug: 'DOCUMENTARY',
                 title: 'Documentarios',
                 items: await basicFetch(`/discover/movie?with_genres=99?language=pt-BR&api_key=${API_KEY}`)
-            },
+            }
         ];
     }
 }
