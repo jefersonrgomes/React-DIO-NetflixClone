@@ -7,8 +7,6 @@ const basicFetch = async (endpoint) => {
     return json;
 }
 
-// eslint-disable-next-line import/no-anonymous-default-export
-//Teste to sync
 export default {
     getHomeList: async () => {
         return [
@@ -64,4 +62,6 @@ export default {
     }
 }
 
-//update files
+/*
+     themoviedb.org/settings/api 
+*/

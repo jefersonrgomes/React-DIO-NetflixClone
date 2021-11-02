@@ -1,22 +1,31 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import tmdb from './tmdb';
-
+import Header from './components/Header';
+import Footer from './components/Footer';
+import MovieBanner from './components/MovieBanner';
+import MovieList from './components/MoviesList';
 
 function Home() {
+  const [movieList, setMovieList] = useState([]);
 
   useEffect(() => {
     const loadAll = async () => {
       let list = await tmdb.getHomeList();
-      console.log(list);
+      setMovieList(list)
     }
 
     loadAll();
   }, [])
 
   return (
-    
-      <h1>Testando REact App</h1>
-    
+    <div>
+
+      <Header />
+      <MovieBanner />
+      <MovieList />
+      <Footer />
+
+    </div>
   )
 }
 
