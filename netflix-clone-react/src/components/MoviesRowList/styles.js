@@ -2,8 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 width: 100%;
-height: 80px;
+padding: 10px;
+margin: 10px;
 background-color: #101010;
-border-top: 5px solid darkred;
+border: 1px solid darkred;
+color: whitesmoke;
 
 `;

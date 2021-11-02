@@ -1,8 +1,11 @@
 import React from 'react'
+import * as S from './styles'
 
 export function Header(){
     return(
-        <h1>teste Header</h1>
+        <S.Container>
+
+        </S.Container>
     )
 }
 

@@ -1,9 +1,12 @@
 import React from 'react'
+import * as S from './styles'
 
 export function Footer(){
     return(
-        <h1>teste footer</h1>
-    )
+<S.Container>
+
+</S.Container>
+       )
 }
 
 export default Footer;

@@ -3,7 +3,8 @@ import tmdb from './tmdb';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import MovieBanner from './components/MovieBanner';
-import MovieList from './components/MoviesList';
+import MoviesRowList from './components/MoviesRowList';
+import Global from './Global.css'
 
 function Home() {
   const [movieList, setMovieList] = useState([]);
@@ -13,18 +14,19 @@ function Home() {
       let list = await tmdb.getHomeList();
       setMovieList(list)
     }
-
     loadAll();
   }, [])
 
   return (
     <div>
-
       <Header />
       <MovieBanner />
-      <MovieList />
+      <section className='lists'>
+        {movieList.map((item, key) => (
+          <MoviesRowList key={key} title={item.title} items={item.items} />
+        ))}
+      </section>
       <Footer />
-
     </div>
   )
 }
