@@ -1,21 +1,23 @@
-# Recriando a interface do Netflix com HTML5 e CSS3 e JavaScript
-<img src="https://user-images.githubusercontent.com/10172471/125153349-718e6c00-e129-11eb-8f87-6bb2eca4ee5a.png" height="100px">|<img src="https://user-images.githubusercontent.com/10172471/128002855-4daaa2cc-d9b5-49eb-a81c-768f7ff05563.png" height="100px">|<img src="https://user-images.githubusercontent.com/10172471/128003252-e4b851a2-7820-41d6-9ed1-9141ee21cca0.png" height="100px">
-:---:|:---:|:---:
+# Recriando a interface do Netflix com REACTJS
+
+![image](https://user-images.githubusercontent.com/10172471/140009531-374b26f3-b6e1-4621-8778-a5ec39eb920a.png)
 
 # Sobre
 
-Este projeto é parte do conteudo pratico do Bootcamp HTML Web Developer & IMPULSO REACT DEVELOPER.
+Este projeto é parte do conteudo pratico dos Bootcamps HTML WEB DEVELOPER && IMPULSO REACT DEVELOPER.
 
 #
 
-Recriação da interface do Netflix utilizando HTML5, CSS3 e JavaScript.
+Recriação da interface do Netflix utilizando REACTJS, HTML5, CSS3 e JAVASCRIPT.
 
-Site Publicado Online no Vercel:
+![giftNetFake](https://user-images.githubusercontent.com/10172471/140010651-629a1d5a-695c-46c8-8c0c-21014d649d18.gif)
+
+O Projeto esta publicado Online no Vercel:
+Acesse pelo link abaixo
 https://netflix-clone-react-js-taupe.vercel.app/
 
 #
 
-Filipe aguiar
-
-Video Aula:
+Este projeto foi desenvolvido com base nos conhecimentos adquiridos no BOOTCAMP IMPULSOO REACT DEVELOPER
+E através do tutorial em video Aula do Bonieky Lacerda que voce pode acessar através do link abaixo.
 https://www.youtube.com/watch?v=tBweoUiMsDg&t=728s
