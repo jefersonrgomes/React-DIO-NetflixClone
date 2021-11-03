@@ -4,12 +4,18 @@
 
 # Sobre
 
-Este projeto é parte do conteudo pratico do Bootcamp HTML Web Developer realizado na plataforma DIO - Digital Inovation One.
+Este projeto é parte do conteudo pratico do Bootcamp HTML Web Developer & IMPULSO REACT DEVELOPER.
 
 #
 
 Recriação da interface do Netflix utilizando HTML5, CSS3 e JavaScript.
 
+Site Publicado Online no Vercel:
+https://netflix-clone-react-js-taupe.vercel.app/
+
 #
 
 Filipe aguiar
+
+Video Aula:
+https://www.youtube.com/watch?v=tBweoUiMsDg&t=728s
