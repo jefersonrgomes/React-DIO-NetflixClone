@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import * as S from './styles'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 export function MoviesRowList({ title, items }) {
 
@@ -15,10 +16,11 @@ export function MoviesRowList({ title, items }) {
             </S.Title>
 
             <div className='movieRow--Left'>
-                <ArrowBackIosIcon />
+                <ArrowBackIosIcon style={{ fontSize: 30 }} />
             </div>
-            <div className='movieRow--Right'>
 
+            <div className='movieRow--Right'>
+                <ArrowForwardIosIcon style={{ fontSize: 30 }} />
             </div>
 
             <div className='movieRow--listArea'>
@@ -32,6 +34,7 @@ export function MoviesRowList({ title, items }) {
                     ))}
                 </div>
             </div>
+
         </S.Container>
     )
 }

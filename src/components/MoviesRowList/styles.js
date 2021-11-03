@@ -20,6 +20,29 @@ color: whitesmoke;
     width: 99999999px;
 }
 
+.movieRow--Left, .movieRow--Right{
+width: 40px;
+height: 225px;
+position: absolute;
+background-color: rgba(0,0,0,0.6);
+border-radius: 5px;
+z-index: 99;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+cursor: pointer;
+opacity: 1;
+}
+.movieRow--Right{
+right: 0;
+
+}
+.movieRow--Left{
+left:0;
+padding-left: 5px;
+}
+
 .movieRow--item{
     display: inline-block;
     width: 150px;
@@ -32,7 +55,7 @@ color: whitesmoke;
     transform: scale(0.9);
 
     &:hover{
-        border: 2px solid white;
+        border-radius: 10px;
         transform: scale(1);
         transition: all ease-in-out 0.3s;
     }
