@@ -1,7 +1,6 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import tmdb from '../utils/tmdb';
-import Header from '../Header';
-import Footer from '../Footer';
 import MoviesRowList from '../MoviesRowList';
 import FeaturedMovie from '../FeaturedMovie';
 import * as S from './styles';
@@ -10,6 +9,7 @@ function Home() {
   const [movieList, setMovieList] = useState([]);
   // eslint-disable-next-line no-unused-vars
   const [featureData, setFeatureData] = useState(null);
+  const [blackHeader, setBlackHeader] = useState(true);
 
   useEffect(() => {
     const loadAll = async () => {
@@ -19,7 +19,7 @@ function Home() {
       //Pegando o featureData
       //Realizando um filter para pegar apenas os filmes Originals Netflix
       let originals = list.filter(i => i.slug === 'ORIGINALS');
-      
+
       //Gerando um numero aleatorio entre os filmes da sessão Originals
       let randomChosen = Math.floor(Math.random() * (originals[0].items.results.length - 1));
 
@@ -37,7 +37,7 @@ function Home() {
     <>
       <S.Container>
         {featureData &&
-          <FeaturedMovie item={featureData} />
+          <FeaturedMovie item={featureData} black={blackHeader} />
         }
 
         <section className='lists'>

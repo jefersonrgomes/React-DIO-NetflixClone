@@ -27,7 +27,6 @@ export const Container = styled.div`
             font-size: 60px;
             font-weight: bold;
             margin-left: 15px;
-
         }
 
         .featured--info{
@@ -76,7 +75,6 @@ export const Container = styled.div`
             &:hover{
                 opacity: 0.7;
             }
-
         }
 
         .featured--watchButton{
@@ -96,7 +94,7 @@ export const Container = styled.div`
             margin-right: 15px; 
         }
 
-        
-
-
+           .testeColor{
+            background-color:#141414;
+        }
 `;

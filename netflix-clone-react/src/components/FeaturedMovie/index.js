@@ -1,8 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import * as S from './styles'
+import Header from '../Header'
 
-export function FeaturedMovie({ item }) {
+export function FeaturedMovie({ item, black }) {
     console.log(item);
 
     let firstDate = new Date(item.first_air_date);
@@ -15,8 +16,9 @@ export function FeaturedMovie({ item }) {
     }
 
     return (
-
         <S.Container>
+            <Header black={black} />
+
             <section className='featured'
                 style={{
                     backgroundSize: 'cover',
