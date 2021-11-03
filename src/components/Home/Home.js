@@ -4,6 +4,7 @@ import tmdb from '../utils/tmdb';
 import MoviesRowList from '../MoviesRowList';
 import FeaturedMovie from '../FeaturedMovie';
 import * as S from './styles';
+import Footer from '../Footer';
 
 function Home() {
   const [movieList, setMovieList] = useState([]);
@@ -33,6 +34,23 @@ function Home() {
     loadAll();
   }, [])
 
+  //Ouvindo o Scroll do mouse
+  useEffect(() =>{
+    const scrollListener = () => {
+      if(window.scrollY > 20){
+        setBlackHeader(true)
+      }
+      else{
+        setBlackHeader(false)
+      }
+    }
+
+    window.addEventListener('scroll', scrollListener);
+    return ()=>{
+      window.removeEventListener('scroll', scrollListener)
+    }
+  },[])
+
   return (
     <>
       <S.Container>
@@ -44,7 +62,9 @@ function Home() {
           {movieList.map((item, key) => (
             <MoviesRowList key={key} title={item.title} items={item.items} />
           ))}
-        </section>
+        </section>     
+         <Footer />
+
       </S.Container>
 
     </>

@@ -4,7 +4,7 @@ export const Container = styled.div`
 width: 100%;
 padding: 5px;
 margin: 5px;
-background-color: #111;
+background-color: #141414;
 color: whitesmoke;
 
 .movieRow{
