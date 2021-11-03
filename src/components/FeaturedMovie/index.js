@@ -2,6 +2,8 @@
 import React from 'react'
 import * as S from './styles'
 import Header from '../Header'
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import ControlPointIcon from '@mui/icons-material/ControlPoint';
 
 export function FeaturedMovie({ item, black }) {
     console.log(item);
@@ -17,7 +19,7 @@ export function FeaturedMovie({ item, black }) {
 
     return (
         <S.Container>
-            <Header black={black} />
+            <Header black={black} className='maxWidth' />
 
             <section className='featured'
                 style={{
@@ -35,8 +37,8 @@ export function FeaturedMovie({ item, black }) {
                             <div className='featured--seasons'>{item.number_of_seasons} temporada{item.number_of_seasons !== 1 ? 's' : ''} </div>
                             <div className='featured--overview'>{item.overview}</div>
                             <div className='featured--buttons'>
-                                <a href="/#" className='featured--watchButton'>Assistir</a>
-                                <a href="/#" className='featured--myListButton'>+ Minha Lista</a>
+                                <a href="/#" className='featured--watchButton'><PlayArrowIcon /> Assistir</a>
+                                <a href="/#" className='featured--myListButton'><ControlPointIcon /> Minha Lista</a>
                             </div>
                             <div className='featured--genres'>
                                 <strong>Gêneros: </strong>
