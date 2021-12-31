@@ -28,8 +28,6 @@ A qual foi consumida com sucesso para trazer de forma dinamica todas informaçõ
 
 ### IMDB = { site: https://developer.imdb.com/ }
 
-### Github = { repositorio : github.com/jefersonrgomes/NetflixCloneReactJs }
-
 ### Vercel = { site : https://netflix-clone-react-js-taupe.vercel.app/ }
 
 ## Material de Apoio
