@@ -1,5 +1,8 @@
 # Recriando a interface do Netflix com REACTJS
 
+![image](https://user-images.githubusercontent.com/10172471/147803060-672d4036-e522-4d29-843d-81add5db535a.png)
+
+
 ![image](https://user-images.githubusercontent.com/10172471/140009531-374b26f3-b6e1-4621-8778-a5ec39eb920a.png)
 
 ## Sobre
@@ -12,9 +15,13 @@ Foi realizado um refactory e melhoria do projeto, migrando o mesmo para um model
 Com a utilização de dados vindos de uma API Externa do IMDB
 A qual foi consumida com sucesso para trazer de forma dinamica todas informações e imagens apresentadas no projeto.
 
+- [x] Baseado em Arquitetura React
+- [x] Integração com API IMDB utilizando Axios
+- [x] Estilização com Styled-Components e Material Design
+
 ## Recriação da interface do Netflix.
 
-![giftNetFake](https://user-images.githubusercontent.com/10172471/140010651-629a1d5a-695c-46c8-8c0c-21014d649d18.gif)
+![image](https://user-images.githubusercontent.com/10172471/147803095-3aa148c6-1b6c-4230-be13-007b69136ec5.png)
 
 
 ### Por Jeferson Ribeiro Gomes = { jrgDev : https://jrgdev.vercel.app/ }
