@@ -2,12 +2,11 @@
 
 ![image](https://user-images.githubusercontent.com/10172471/147803060-672d4036-e522-4d29-843d-81add5db535a.png)
 
-
-![image](https://user-images.githubusercontent.com/10172471/140009531-374b26f3-b6e1-4621-8778-a5ec39eb920a.png)
-
 ## Sobre
 
 ### Este projeto foi desenvolvido com base nos conhecimentos adquiridos nos Bootcamps e cursos da Digital Innovation One.
+
+![image](https://user-images.githubusercontent.com/10172471/140009531-374b26f3-b6e1-4621-8778-a5ec39eb920a.png)
 
 A proposta inicial do projeto, era uma pagina Fake do Netflix, feita em HTML, CSS e Javascript.
 Após a implementação e entrega do projeto
